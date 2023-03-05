@@ -25,4 +25,18 @@ python3 manage.py runserver
 - Определим интересующие нас файлы, скопируем их внутрь image, установим необходимые зависимости
 ## Создание docker-compose.yml:
 - Определим в папке `/nginx` конфигурацию `local.conf`
-- 
+- Пропишим все сервисы в `docker-compose.yml`
+## Создание html страницы
+Добавим в `urls.py` новый route `/my_page.html`
+
+Проверим его работу:
+
+![Проверка работы проекта](report/3.png)
+
+## Запуск 
+```bash
+docker-compose build
+docker-compose up -d
+```
+
+![Проверка работы проекта](report/4.png)
